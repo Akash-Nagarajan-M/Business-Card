@@ -42,7 +42,6 @@ Vuforia Sdk Engine
 
 ![image](https://user-images.githubusercontent.com/86908101/235359319-32ad0073-fc33-4746-815c-acb09924d36d.png)
 
-![image](https://user-images.githubusercontent.com/86908101/235359330-ff897e20-7a8b-44ca-bbe6-cb46bb5e3ecb.png)
 
 
 ## Developer Docs:
