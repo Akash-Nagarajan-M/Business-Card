@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business Card Generator & Avatar Creator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>AR Business Card </h1>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#business-card">Business Card Generator</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#avatar">Avatar Creator</a>
+			</li>
+			
+		</ul>
+
+		<div class="tab-content">
+			
+			<div id="avatar" class="tab-pane fade">
+				<h3>Avatar Creator</h3>
+				<div class="form-container">
+					<ul>
+						<li>Click the "Create Avatar" button.</li>
+						<li>Create an avatar and click the "Done" button when you're done customizing.</li>
+						<li>After creation, this parent page receives the URL to the avatar.</li>
+						<li>The Ready Player Me window closes and the URL is displayed.</li>
+						<li>Choose the full body type,your gender and upload your photo to generate an Avatar url in the iframe</li>
+					</ul>
+					<h2 id="avatarUrl">Avatar URL:</h2>
+					<input type="button" value="Create Avatar" onClick="displayIframe()" />
+			
+					<br><br>
+					<iframe id="frame" class="frame" allow="camera *; microphone *; clipboard-write" style="width: 500px;
+					height: 600px;" hidden></iframe>
+				</div>
+			</div>
+			<div id="business-card" class="tab-pane fade show active">
+				<h3>Business Card Generator</h3>
+				<div class="form-container">
+					<form onsubmit="generateCard(event)">
+						<label for="first-name">First name:</label>
+						<input type="text" id="fname-input" name="first-name" required><br><br>
+		
+						<label for="last-name">Last name:</label>
+						<input type="text" id="lname-input" name="last-name" required><br><br>
+		
+						<label for="profession">Profession:</label>
+						<input type="text" id="profession-input" name="profession" required><br><br>
+		
+						<label for="phone">Phone:</label>
+						<input type="text" id="phone-input" name="phone" required><br><br>
+		
+						<label for="email">Email:</label>
+						<input type="email" id="email-input" name="email" required><br><br>
+		
+						<label for="website">Website:</label>
+						<input type="text" id="website-input" name="website" required><br><br>
+		
+						<label for="image">Image:</label>
+						<input type="file" id="image-input" name="image" accept="image/*" required><br><br>
+						
+						<input type="submit" value="Generate Business Card">
+						<br>
+						<br>
+						<image id="preview-image"/>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
+
