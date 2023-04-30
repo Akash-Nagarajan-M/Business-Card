@@ -1,6 +1,9 @@
 # Business-Card
 This is a ar business card application that is built using unity. 
 
+## To run this application
+Download the ar business card apk file in your mobile phone and use the business card.jpg file to run this application
+
 ## Prerequisites:
 Unity with android support
 Vuforia Sdk Engine
@@ -36,6 +39,10 @@ Vuforia Sdk Engine
 
 
 ## Outputs:
+
+![image](https://user-images.githubusercontent.com/86908101/235359319-32ad0073-fc33-4746-815c-acb09924d36d.png)
+
+![image](https://user-images.githubusercontent.com/86908101/235359330-ff897e20-7a8b-44ca-bbe6-cb46bb5e3ecb.png)
 
 
 ## Developer Docs:
